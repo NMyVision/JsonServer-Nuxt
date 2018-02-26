@@ -1,6 +1,6 @@
 html, body
 {
-  background-color: #fff;
+  background-color: var(--light);
   color: #000;
   letter-spacing: 0.5px;
   font-family: "Source Sans Pro", Arial, sans-serif;
@@ -15,10 +15,7 @@ footer
   border-top: 1px solid #ddd;
 }
 
-a, a:hover, a:focus, a:visited
-{
-  color: #000;
-}
+ 
 
 .logo {
   width: 100%;

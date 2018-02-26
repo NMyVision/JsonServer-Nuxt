@@ -1,16 +1,13 @@
-<template>
-  <section class="container">
-    <img src="~assets/img/logo.png" alt="Nuxt.js Logo" class="logo" >
-    <h1 class="title">
-      User
-    </h1>
-    <h2 class="info">
-      {{ user.name }}
-    </h2>
-    <nuxt-link class="button" to="/">
-      Users
-    </nuxt-link>
-  </section>
+<template lang="pug">
+section.container.mt-5: .card
+  .card-body
+    div.text-center: img.logo(src='~assets/img/logo.png', alt='Nuxt.js Logo')
+    h4 USERS
+    
+    pre.bg-light.p-2: code {{ JSON.stringify( user, null, 2)}}
+   
+    nuxt-link.btn.btn-sm.btn-outline-primary(href to="/") Back
+    
 </template>
 
 <script>
@@ -35,18 +32,3 @@ export default {
   }
 }
 </script>
-
-<style scoped>
-.title {
-  margin-top: 30px;
-}
-.info {
-  font-weight: 300;
-  color: #9aabb1;
-  margin: 0;
-  margin-top: 10px;
-}
-.button {
-  margin-top: 30px;
-}
-</style>

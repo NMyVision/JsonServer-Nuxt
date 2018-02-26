@@ -10,8 +10,7 @@ section.container.mt-5: .card
       tbody
         tr(v-for='(user, index) in users', :key='index')
           td 
-            nuxt-link(:to="{ name: 'id', params: { id: index }}")
-              | {{ user.name }}
+            nuxt-link(:to="{ name: 'id', params: { id: user.id }}") {{ user.name }}
           td: a(href @click.prevent="removeUser(user.id)") &times;
     .input-group
       input.form-control(type='text' v-model="name")
