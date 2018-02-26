@@ -39,7 +39,6 @@ export default {
   },
   methods: {
     async addUser() {
-      console.log("click addUser")
       let user = {
         name: this.name
       }
@@ -49,7 +48,6 @@ export default {
       await this.getUsers()
     },
     async removeUser(id) {
-      console.log(id)
       await axios.delete(`/api/users/${id}`)
       await this.getUsers()
     },

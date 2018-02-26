@@ -13,7 +13,7 @@ const create = (app, opts) => {
 
   const defs = {
     useDefault: true,
-    static: "src/server/public",
+    static: "/public",
     foreignKeySuffix: "Id",
     name: name => `/databases/dynamic/db.${name}.json`,
     bodyParser: false,
@@ -26,7 +26,7 @@ const create = (app, opts) => {
   let o = Object.assign(defs, opts)
 
   // public page
-  //if (o.useDefault) app.use(defaults(opts))
+  if (o.useDefault) app.use(defaults(opts))
 
   // dynamic api routes
   if (o.dynamicPath) app.use(o.dynamicPath, dynamicRouter(o))

@@ -4,6 +4,7 @@ export default port => {
   const app = express()
 
   const opts = {
+    useDefault: false,
     static: null,
     // static: 'src/server/_public',
     // foreignKeySuffix: 'Id',
