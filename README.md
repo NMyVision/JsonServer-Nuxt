@@ -1,8 +1,16 @@
 # jsonserver-nuxt
 
-> [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) = :zap:
+> [ExpressJS](http://expressjs.com/) + [Nuxt.js](https://nuxtjs.org) + [JsonServer](https://github.com/typicode/json-server) = :zap:
 
-A custom version of JsonServer that allows for on the fly of new databases/api routes.
+ Nuxt/ExpressJS powered site with data, api provided by a custom version of JsonServer. 
+ 
+ 
+### TO-DO
+ - [x] built in support for adding databases/api routes  on the fly 
+ - [x] add Keys parameter to API to allow change object properties
+ - [ ] UI to support adding databases/api
+ - [ ] store implementation
+ - [ ] built in basic auth support
 
 ## Build Setup
 
