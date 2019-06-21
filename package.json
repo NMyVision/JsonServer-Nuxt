@@ -20,7 +20,7 @@
     "jsonserver"
   ],
   "dependencies": {
-    "axios": "^0.16.2",
+    "axios": "^0.18.1",
     "connect-pause": "^0.1.0",
     "cors": "^2.8.4",
     "cross-env": "^5.0.1",
